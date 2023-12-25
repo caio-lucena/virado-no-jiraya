@@ -1,0 +1,6 @@
+A palavra chave "this" se refere ao objeto
+Quando algo é estático no Java, existe a possibilidade de não haver instância
+
+Quando usar static em métodos? Quando o método não acessa atributos da classe
+
+Quando usar static em atributos? Quando o atributo precisa percencer à classe, e não à instância
