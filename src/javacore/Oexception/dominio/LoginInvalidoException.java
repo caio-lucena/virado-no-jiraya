@@ -2,7 +2,9 @@ package javacore.Oexception.dominio;
 
 public class LoginInvalidoException extends Exception{
 
-    public LoginInvalidoException() {
+	private static final long serialVersionUID = 1L;
+
+	public LoginInvalidoException() {
         super("Login inválido");
     }
 

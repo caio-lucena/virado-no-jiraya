@@ -1,7 +1,6 @@
 package javacore.Kenumdominio.teste;
 
 import javacore.Kenumdominio.dominio.Maquininha;
-import javacore.Kenumdominio.dominio.TipoPagamento;
 
 public class MaquininhaTeste01 {
     public static void main(String[] args) {

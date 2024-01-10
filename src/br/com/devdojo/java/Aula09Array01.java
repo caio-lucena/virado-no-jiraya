@@ -2,8 +2,7 @@ package br.com.devdojo.java;
 
 public class Aula09Array01 {
     public static void main(String[] args) {
-        int tamanho = 3;
-
+        
         int[] arrayIdades = {21, 15, 30};
 
         for(int array: arrayIdades){

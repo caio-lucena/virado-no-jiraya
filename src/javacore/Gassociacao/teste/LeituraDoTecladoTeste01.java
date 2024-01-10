@@ -1,6 +1,5 @@
 package javacore.Gassociacao.teste;
 
-import javax.swing.*;
 import java.util.Scanner;
 
 public class LeituraDoTecladoTeste01 {

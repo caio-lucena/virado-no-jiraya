@@ -1,9 +1,11 @@
 package br.com.devdojo.java;
 
 public class Aula02TiposPrimitivos {
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
         int numero = 18;
-        long numeroLong = 1000000;
+        
+		long numeroLong = 1000000;
         float salarioFloat = 2500.0F;
         double salarioDouble = 2500.0;
         byte idadeByte = -128;
