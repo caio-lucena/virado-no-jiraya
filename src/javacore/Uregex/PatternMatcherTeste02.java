@@ -12,17 +12,17 @@ import java.util.regex.Pattern;
  * \W : todos os caracteres que não estiverem inclusos no \w
  */
 
-public class PatternMatcherTeste01 {
+public class PatternMatcherTeste02 {
 
 	public static void main(String[] args) {
-		String regex = "Luffy";
-		String texto = "Luffy do Chapéu de palha é o Luffytaro de Wano";
+		String regex = "\\d";
+		String texto = "Luffy do Chapéu de palha, recompensa: 3 bilhões de Berries";
 		
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(texto);
 		
-		while(matcher.find()) {
-			System.out.println("Posição: " + matcher.start() + ", valor encontrado: " + matcher.group());
+		while (matcher.find()) {
+			System.out.println("Posição: "+ matcher.start() + ", valor encontrado: " + matcher.group());
 		}
 
 	}
