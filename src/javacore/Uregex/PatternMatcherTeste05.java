@@ -1,5 +1,6 @@
 package javacore.Uregex;
 
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,19 +24,24 @@ import java.util.regex.Pattern;
  * .  : encontra tudo que conter algum dos elementos. Exemplo 1.3 pode entrontrar 123, 1@3, 1A3, 133
  */
 
-public class PatternMatcherTeste02 {
+public class PatternMatcherTeste05 {
 
 	public static void main(String[] args) {
-		String regex = "\\d";
-		String texto = "Luffy do Chapéu de palha, recompensa: 3 bilhões de Berries";
+		//String regex = "[abc]";		busca ou 'a' ou 'b' ou 'c'
+		//String regex = "[a-cD-J]";    busca um range
+		String regex = "([a-zA-Z0-9\\._-])+@([a-zA-Z])+(\\.([a-zA-Z])+)+";
+		String texto = "luffy@gmail.com.br, zoro@hotmail.com, nami@devdojo.com.br, buggy@";
 		
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(texto);
 		
 		while (matcher.find()) {
-			System.out.println("Posição: "+ matcher.start() + ", valor encontrado: " + matcher.group());
+			System.out.println("Posição: " + matcher.start() + ", valor encontrado: " + matcher.group());
 		}
-
+		
+		System.out.println("#@@Buggy".matches(regex));
+		System.out.println("###");
+		System.out.print(Arrays.toString(texto.split(",")));
 	}
 
 }
